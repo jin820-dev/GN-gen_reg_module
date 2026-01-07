@@ -1,0 +1,14 @@
+name,offset,access,reset,field,lsb,msb,desc
+REG_RW0,0x0000,RW,0x00000000,ENABLE,0,0,Enable block
+REG_RW0,0x0000,RW,0x00000000,RSVD,1,31,Reserved
+
+REG_RO0,0x0004,RO,0x00000001,READY,0,0,Ready status
+REG_RO0,0x0004,RO,0x00000001,BUSY,1,1,Busy status
+REG_RO0,0x0004,RO,0x00000001,RSVD,2,31,Reserved
+
+REG_WO0,0x0008,WO,0x00000000,DATA,0,31,Write-only TX data
+
+REG_W1C0,0x000C,W1C,0x00000000,IRQ_CLR,0,7,Write-1-to-clear interrupt bits
+REG_W1C0,0x000C,W1C,0x00000000,RSVD,8,31,Reserved
+
+
